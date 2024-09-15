@@ -1,0 +1,18 @@
+:root {
+  /* Color Palette */
+  --dark-1: #202020;
+  --dark-2: #393939;
+  --dark-accent-1: #331c17;
+  --dark-accent-2: #563226;
+  --light-1: #f6cd26;
+  --light-2: #ac6b26;
+  --light-accent-1: #bb7f57;
+  --light-accent-2: #725956;
+
+  --slow-transition: ease 200ms;
+}
+
+body {
+  color: white;
+  background-color: var(--dark-1);
+}
