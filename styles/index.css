@@ -4,7 +4,7 @@
   right: 1rem;
   width: 3rem;
   height: 3rem;
-  background-color: var(--dark-2);
+  background-color: var(--base-1);
 
   border-radius: 0.5rem;
 
@@ -12,6 +12,8 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  z-index: 1;
 
   transition: var(--slow-transition);
   user-select: none;
@@ -28,7 +30,7 @@
   position: fixed;
   top: 1rem;
   right: 1rem;
-  background-color: var(--dark-2);
+  background-color: var(--base-1);
 
   padding: 1rem;
   border-radius: 0.5rem;
@@ -44,6 +46,10 @@
   opacity: 0;
 }
 
+.add-task-button {
+  background-color: aliceblue;
+}
+
 .task-list {
   display: flex;
   flex-direction: column;
@@ -53,13 +59,58 @@
 
 .task {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
-  background-color: var(--dark-2);
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--base-1);
+}
+
+.task-title {
+  justify-self: flex-start;
+  padding: 0.5rem 1rem;
+
+  background-color: var(--base-2);
+
+  user-select: none;
+}
+
+.finish-button {
+  color: var(--soft-black-1);
+  background-color: var(--accent-3);
+
+  cursor: pointer;
+  user-select: none;
+  /*
+    Color + Background
+    Text + Font
+    Transforms + Animation
+    Misc
+  */
 }
 
 .remove-task-button {
-  background-color: var(--light-1);
+  background-color: var(--accent-4);
+
+  cursor: pointer;
   user-select: none;
+
+
+  /*
+    Position & Layout
+    Box Model
+    Color + Background
+    Text + Font
+    Transforms + Animation
+    Misc
+  */
 }
+
+/*
+  Text & Font
+  Background
+  Box Model
+  Position & Layout
+  Transforms & Animation
+  Misc
+*/

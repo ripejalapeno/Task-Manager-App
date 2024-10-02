@@ -1,10 +1,21 @@
 :root {
   /* Color Palette */
-  --dark-1: #202020;
-  --dark-2: #393939;
-  --dark-accent-1: #331c17;
-  --dark-accent-2: #563226;
-  --light-1: #f6cd26;
+  --base-1: #393939;
+  --base-2: #615c5c;
+  --base-3: #000000;
+  --base-4: #000000;
+
+  --accent-1: #000000;
+  --accent-2: #000000;
+  --accent-3: #09c919;
+  --accent-4: #f6cd26;
+
+  --soft-black-1: #202020;
+  --soft-black-2: #000000;
+
+  --soft-white-1: #000000;
+  --soft-white-2: #000000;
+
   --light-2: #ac6b26;
   --light-accent-1: #bb7f57;
   --light-accent-2: #725956;
@@ -14,5 +25,5 @@
 
 body {
   color: white;
-  background-color: var(--dark-1);
+  background-color: var(--soft-black-1);
 }

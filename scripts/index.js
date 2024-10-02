@@ -5,11 +5,19 @@ const taskList = document.querySelector('.js-task-list');
 function renderTaskList() {
   let html = '';
   let taskId = 0;
+
+  // Render task list item by item
   tasks.forEach((task) => {
     html += `
       <div class="js-task task">
         <div class="task-title">
           ${task}
+        </div>
+
+        <div class="js-finish-button finish-button" data-task-id="${taskId}">
+          <span class="material-symbols-outlined">
+            check_circle
+          </span>
         </div>
 
         <div class="js-remove-task-button remove-task-button" data-task-id="${taskId}">
@@ -34,6 +42,20 @@ function renderTaskList() {
       renderTaskList();
     })
   })
+
+  const finishButtons = document.querySelectorAll('.js-finish-button');
+
+  finishButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const { taskId } = button.dataset;
+
+      // Change the task state to finished
+    })
+  })
+  
+  
+
+  
 }
 
 renderTaskList();

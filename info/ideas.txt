@@ -1,0 +1,7 @@
+Add the ability to check off a task
+  button
+
+  this saves the task to a visible list 
+    for a day,
+  then an invisible list thereafter,
+  which can be accessed by showing finished tasks
