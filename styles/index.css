@@ -58,18 +58,23 @@
 }
 
 .task {
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: space-between;
   width: 100%;
+
+  border-radius: 10px;
   background-color: var(--base-1);
 }
 
 .task-title {
-  justify-self: flex-start;
+  width: 10rem;
   padding: 0.5rem 1rem;
+  margin: 0.5rem 0.7rem;
 
+  border-radius: 15px;
   background-color: var(--base-2);
 
   user-select: none;
@@ -81,12 +86,6 @@
 
   cursor: pointer;
   user-select: none;
-  /*
-    Color + Background
-    Text + Font
-    Transforms + Animation
-    Misc
-  */
 }
 
 .remove-task-button {
@@ -94,9 +93,17 @@
 
   cursor: pointer;
   user-select: none;
+}
 
+.task-controller {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 0.5rem 1rem;
+  gap: 0.5rem;
+}
 
-  /*
+/*
     Position & Layout
     Box Model
     Color + Background
@@ -104,13 +111,3 @@
     Transforms + Animation
     Misc
   */
-}
-
-/*
-  Text & Font
-  Background
-  Box Model
-  Position & Layout
-  Transforms & Animation
-  Misc
-*/
